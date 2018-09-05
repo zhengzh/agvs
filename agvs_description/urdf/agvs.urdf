@@ -227,7 +227,9 @@
   </joint>
   <transmission name="joint_bmw_trans">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="joint_back_motor_wheel"/>
+    <joint name="joint_back_motor_wheel">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
     <actuator name="joint_bmw_motor">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1.0</mechanicalReduction>
